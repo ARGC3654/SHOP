@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suéteres - ModaEstilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
@@ -16,26 +18,22 @@
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#productos">Suéteres</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <div class="cart">
-                <i class="fas fa-shopping-cart"></i>
-                <span id="cart-count">0</span>
-            </div>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
             <h2>Suéteres para esta Temporada</h2>
-            <p>Calidad y calidez a precios increíbles</p>
+            <p>Catálogo de estilos únicos</p>
             <a href="#productos" class="btn">Ver Catálogo</a>
         </div>
         <!-- La imagen de fondo del hero se cambia en styles.css, busca el comentario "IMAGEN DE PORTADA" -->
     </section>
 
     <section id="productos" class="products">
-        <h2>Nuestros Productos</h2>
+        <h2>Nuestro Catálogo</h2>
 
         <!-- Buscador simple: filtra los productos por nombre mientras el cliente escribe -->
         <div class="search-bar">
@@ -46,22 +44,22 @@
         <div class="product-grid" id="product-grid"></div>
     </section>
 
+    <!-- ═══════════════════════════════════════════════════════════
+         SECCIÓN DE CONTACTO — muestra tu código QR
+         El archivo "QR.png" debe estar en la raíz del proyecto,
+         junto a index.html (igual que como lo tienes en VS Code).
+         ═══════════════════════════════════════════════════════════ -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <p>Escanea el código para escribirnos directo por WhatsApp</p>
+        <div class="qr-box">
+            <img src="QR.png" alt="Código QR de contacto por WhatsApp">
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2026 ModaEstilo. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Carrito Modal -->
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Tu Carrito</h2>
-            <div id="cart-items"></div>
-            <div class="cart-total">
-                <strong>Total: $<span id="cart-total">0</span></strong>
-            </div>
-            <button class="btn checkout">Finalizar Compra</button>
-        </div>
-    </div>
 
     <!-- ═══════════════════════════════════════════════════════════
          BOTÓN FLOTANTE DE WHATSAPP
@@ -72,18 +70,6 @@
        class="whatsapp-float" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- ═══════════════════════════════════════════════════════════
-         TU CÓDIGO QR DE WHATSAPP (opcional)
-         Si quieres mostrar tu QR en vez de (o junto con) el botón,
-         sube tu imagen a la carpeta del proyecto (ej. "qr-whatsapp.png")
-         y descomenta este bloque:
-
-         <div class="qr-whatsapp">
-             <img src="qr-whatsapp.png" alt="Escanea para escribirnos por WhatsApp">
-             <p>Escanéame</p>
-         </div>
-         ═══════════════════════════════════════════════════════════ -->
 
     <script src="script.js"></script>
 </body>
