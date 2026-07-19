@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suéteres - ModaEstilo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ModaEstilo</h1>
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Suéteres</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Suéteres para esta Temporada</h2>
+            <p>Calidad y calidez a precios increíbles</p>
+            <a href="#productos" class="btn">Ver Catálogo</a>
+        </div>
+        <!-- La imagen de fondo del hero se cambia en styles.css, busca el comentario "IMAGEN DE PORTADA" -->
+    </section>
+
+    <section id="productos" class="products">
+        <h2>Nuestros Productos</h2>
+
+        <!-- Buscador simple: filtra los productos por nombre mientras el cliente escribe -->
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Buscar suéter...">
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ModaEstilo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Carrito Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0</span></strong>
+            </div>
+            <button class="btn checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         BOTÓN FLOTANTE DE WHATSAPP
+         Cambia el número en el href de abajo por el tuyo, formato:
+         https://wa.me/502XXXXXXXX  (502 = código de Guatemala)
+         ═══════════════════════════════════════════════════════════ -->
+    <a href="https://wa.me/50200000000?text=Hola,%20quiero%20información%20sobre%20sus%20suéteres"
+       class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         TU CÓDIGO QR DE WHATSAPP (opcional)
+         Si quieres mostrar tu QR en vez de (o junto con) el botón,
+         sube tu imagen a la carpeta del proyecto (ej. "qr-whatsapp.png")
+         y descomenta este bloque:
+
+         <div class="qr-whatsapp">
+             <img src="qr-whatsapp.png" alt="Escanea para escribirnos por WhatsApp">
+             <p>Escanéame</p>
+         </div>
+         ═══════════════════════════════════════════════════════════ -->
+
+    <script src="script.js"></script>
+</body>
+</html>
