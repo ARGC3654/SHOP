@@ -12,35 +12,35 @@
 const products = [
     {
         id: 1,
-        name: "Suéter Los Ángeles",
+        name: "Suéter Los Ángeles Tie Dye",
         price: 265,
         sizes: ["S", "M", "L", "XL"],
         images: ["IMAGENES_ROPA/LOS-ANGELES%20SUETER.png"] // el %20 reemplaza el espacio del nombre
     },
     {
         id: 2,
-        name: "Suéter Blanco Batman",
+        name: "Suéter Batman Crema",
         price: 280,
         sizes: ["S", "M", "L", "XL"],
         images: ["IMAGENES_ROPA/SUETER-BLANCO-BATMAN.png"]
     },
     {
         id: 3,
-        name: "Suéter Blanco Money",
+        name: "Suéter Money Bubble",
         price: 295,
         sizes: ["S", "M", "L", "XL"],
         images: ["IMAGENES_ROPA/SUETER-BLANCO-MONEY-ENFRENTE.png", "IMAGENES_ROPA/SUETER-BLANCO-MONEY.png"]
     },
     {
         id: 4,
-        name: "Suéter Blanco Playa",
+        name: "Suéter Playa Palmera",
         price: 259,
         sizes: ["S", "M", "L", "XL"],
         images: ["IMAGENES_ROPA/SUETER-BLANCO-PLAYA-ENFRENTE.png", "IMAGENES_ROPA/SUETER-BLANCO-PLAYA.png"]
     },
     {
         id: 5,
-        name: "Suéter California",
+        name: "Suéter California Vintage",
         price: 300,
         sizes: ["S", "M", "L", "XL"],
         // ⚠️ Revisa que este nombre coincida exacto con tu archivo de la vista de frente:
@@ -48,7 +48,7 @@ const products = [
     },
     {
         id: 6,
-        name: "Suéter Flores Rosadas",
+        name: "Suéter Sakura Tokio",
         price: 270,
         sizes: ["S", "M", "L", "XL"],
         // ⚠️ Revisa que este nombre coincida exacto con tu archivo (frente y reverso en una sola imagen):
@@ -56,35 +56,29 @@ const products = [
     },
     {
         id: 7,
-        name: "Suéter Gris",
-        price: 250,
+        name: "Suéter Gris Hokkaido Wave",
+        price: 275,
         sizes: ["S", "M", "L", "XL"],
-        images: ["IMAGENES_ROPA/SUETER-GRIS-ENFRENTE.png"]
+        // Frente (texto pequeño) y reverso (la ola grande) son la misma sudadera:
+        images: ["IMAGENES_ROPA/SUETER-GRIS-ENFRENTE.png", "IMAGENES_ROPA/SUETER-GRIS-OLAS-ESPALDA.png"]
     },
     {
         id: 8,
-        name: "Suéter Gris Olas",
-        price: 288,
-        sizes: ["S", "M", "L", "XL"],
-        images: ["IMAGENES_ROPA/SUETER-GRIS-OLAS-ESPALDA.png"]
-    },
-    {
-        id: 9,
-        name: "Suéter Mon",
+        name: "Suéter Mon Beige",
         price: 275,
         sizes: ["S", "M", "L", "XL"],
         images: ["IMAGENES_ROPA/SUETER-MON-ENFRENTE.png", "IMAGENES_ROPA/SUETER-MON-ESPALDA.png"]
     },
     {
-        id: 10,
-        name: "Suéter Negro Batman",
+        id: 9,
+        name: "Suéter Negro Batman Cómic",
         price: 292,
         sizes: ["S", "M", "L", "XL"],
         images: ["IMAGENES_ROPA/SUETER-NEGRO-BATMAN.jpg"]
     },
     {
-        id: 11,
-        name: "Suéter Santa Cruz",
+        id: 10,
+        name: "Suéter Santa Cruz Donut",
         price: 262,
         sizes: ["S", "M", "L", "XL"],
         images: ["IMAGENES_ROPA/SUETER-SANTA-CRUZ.png"]
